@@ -1,0 +1,297 @@
+//==================== section form
+.section-form {
+	background: no-repeat 50% 50% transparent;
+
+	.btn-holder {
+		margin-top: 0px;
+	}
+
+	.btn {
+		width: 300px;
+	}
+}
+
+//========= form agree check
+.form-agree-check {
+	font: 12px/15px "PT Sans";
+	margin-top: 30px;
+
+	.jq-checkbox {
+		top: 1px;
+	}
+}
+
+//==================== section form-x
+.form-one,
+.form-two{
+	margin-top: 73px;
+}
+
+.form-x,
+.form-x1{
+	background-image: url('../images/formX-bg.jpg');
+	padding: 0px 0 0px;
+
+	h2 {
+		margin-bottom: 0px;
+	}
+
+	.left_block{
+		width: 57%;
+		height: 660px;
+		display: inline-block;
+		padding-top: 68px;
+		padding-right: 74px;
+		background-color: #f2f4f5;
+		overflow: hidden;
+
+		.position-block{
+			float: right;
+		}
+
+		.logo{
+			display: block;
+			margin-bottom: 30px;
+			margin-left: 23px;
+		}
+
+		.woman{
+			display: inline-block;
+		}
+
+		.text-form{
+			display: inline-block;
+			margin-top: 48px;
+			margin-left: 27px;
+			width: 330px;
+			float: right;
+
+			.text{
+				color: #383838;
+				font: 300 18px/30px 'Open Sans';
+				margin-bottom: 24px;
+
+				span{
+					font-weight: 800;
+				}
+			}
+		}
+	}
+
+	.form-block{
+		width: 43%;
+		height: 660px;
+		display: inline-block;
+		float: right;
+		padding-top: 76px;
+		background-color: #00b968;
+		padding-left: 73px;
+		text-align: center;
+
+		.wrap{
+			width: 300px;
+			color: #fff;
+
+			h3{
+				font: 500 34px/75px 'Open Sans';
+				height: 35px;
+				margin-bottom: 44px;
+			}
+
+			p{
+				font: 300 20px/30px 'Open Sans';
+				margin-bottom: 47px;
+			}
+
+			input{
+				background-color: transparent !important;
+				border: none !important;
+				border-bottom: 1px solid #fff !important;
+				text-align: center !important;
+				color: #fff !important;
+				padding-bottom: 24px;
+				font: 300 15px/30px 'Open Sans';
+				margin-bottom: 16px;
+			}
+
+			.fio_button{
+				width: 302px;
+				height: 73px;
+				border-radius: 37px;
+				background-color: #7a4d9f;
+				text-align: center;
+				color: #fff;
+				font: 300 16px/73px 'Geometria';
+				margin-bottom: 30px;
+				margin-top: 9px;
+
+				&:hover{
+					background-color: #412b57;
+				}
+			}
+
+			.form-agree{
+				width: 220px;
+				display: block;
+				margin: 0 auto;
+
+				.form-agree-check{
+					color: #fff;
+					font: 300 13px/16px 'Open Sans';
+					margin-top: 0;
+
+					.link{
+						color: #fff;
+						text-decoration: underline;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.form-x1{
+
+	.left_block{
+		height: 736px;
+		padding-top: 40px;
+
+		.logo{
+			margin-bottom: 18px;
+		}
+	}
+
+	.form-block{
+		height: 736px;
+
+		.wrap{
+			width: 350px;
+
+			.fio_button{
+				width: 350px;
+			}
+		}
+	}
+}
+
+//========================= app-form
+.app-form{
+	width: 313px;
+	display: block;
+	margin: 0 auto;
+
+	input{
+		width: 100%;
+		height: 49px;
+		background-color: #fff;
+		border-radius: 24px;
+		padding-top: 2px;
+		border: none !important;
+		padding-left: 24px;
+		color: #898989 !important;
+		font: 300 12px/12px 'Open Sans';
+		margin-bottom: 18px;
+	}
+
+	::-webkit-input-placeholder {opacity: 1; color: #898989;}
+	:-moz-placeholder {opacity: 1; color: #898989;}
+	::-moz-placeholder {opacity: 1; color: #898989;}
+	:-ms-input-placeholder {opacity: 1; color: #898989;}
+	.placeholder {opacity: 1; color: #898989;}
+
+	.pass{
+		text-align: right;
+		color: #fff;
+		font: 300 13px/13px 'Open Sans';
+		display: block;
+		margin-bottom: 29px;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.btn-holder{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.reg_button,
+		.log_button{
+			width: 148px;
+			display: inline-block;
+			text-align: center;
+			border-radius: 21px;
+			height: 42px;
+			color: #ffffff;
+			font: 300 12px/42px 'Open Sans';
+		}
+
+		.reg_button{
+			background-color: #00c46e;
+
+			&:hover{
+				background-color: #007640;
+			}
+		}
+
+		.log_button{
+			border: 3px solid #fff;
+			background-color: transparent !important;
+			font: 300 12px/35px 'Open Sans';
+
+			&:hover{
+				background-color: #007640 !important;
+				border: 3px solid #007640;
+			}
+		}
+	}
+
+	.form-agree{
+		margin-top: 20px;
+
+
+		.checkbox-label{
+			padding-left: 0;
+			display: inline-block;
+		}
+
+		.form-agree-check-1{
+			width: 23px;
+			height: 23px;
+			border-radius: 100%;
+			background-color: transparent !important;
+			border: 3px solid #fff;
+
+			.jq-checkbox{
+				width: 13px !important;
+				height: 13px !important;
+				border-radius: 100%;
+				@include abs-center;
+				background-color: transparent !important;
+			}
+
+			.checkbox{
+				width: 13px !important;
+				height: 13px !important;
+				border-radius: 100%;
+				@include abs-center;
+				background-color: transparent !important;
+			}
+		}
+
+		span{
+			width: 275px;
+			margin-left: 10px;
+			display: inline-block;
+			color: #fff;
+			font: 300 11px/17px 'Open Sans';
+
+			a{
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+}

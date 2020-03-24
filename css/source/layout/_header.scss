@@ -1,0 +1,125 @@
+//====================global header
+.layout-header {
+	@include abs-center;
+	//@include abs-center-fixed;
+	bottom: auto;
+	padding-top: 49px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #7a4ea0;
+
+	.si-phone {
+		padding-top: 0px;
+	}
+
+	.nav-block{
+		width: 51px;
+		height: 30px;
+		margin-top: 4px;
+
+		//.icon-sandwich{
+		//	width: 51px;
+		//	height: 30px;
+		//
+		//}
+		//
+		//svg{
+		//	width: 51px;
+		//}
+
+	}
+
+
+.logo {
+	display: inline-block;
+
+	img {
+		display: block;
+	}
+}
+
+.si-phone {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+
+	.si-phone-text {
+		margin-bottom: 0px;
+	}
+
+
+	.consult{
+		width: 250px;
+		height: 59px;
+		display: inline-block;
+		box-shadow: 0 6px 9px rgba(109, 70, 143, 0.57);
+		border-radius: 29px;
+		border: 2px solid #00c46e;
+		background-color: #00c46e;
+		text-align: center;
+		color: #fff;
+		font: 400 16px/50px 'Geometria';
+		margin-left: 28px;
+		float: right;
+
+		&:hover{
+			@extend .btn-ghost;
+		}
+	}
+}
+
+	.phone-link {
+		display: inline-block;
+		color: #fff;
+		font: 300 26px/20px 'Geometria';
+		width: 250px;
+		position: relative;
+		margin-top: 18px;
+
+		&.menu{
+			display: none;
+		}
+
+
+		.phone-icon{
+			position: absolute;
+			width: 17px;
+			height: 16px;
+			top: -4px;
+			left: -34px;
+		}
+	}
+
+	&.active-menu {
+		padding-top: 25px;
+
+		.phone-link{
+			display: none;
+		}
+
+		.menu{
+			display: block;
+		}
+
+		.consult{
+			margin-right: 150px;
+		}
+	}
+
+.global-nav {
+
+	li {
+
+		&:not(:first-child) {
+		margin-left: 0px;
+		}
+	}
+
+	a {
+
+	}
+}
+
+}

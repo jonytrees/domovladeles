@@ -1,0 +1,96 @@
+//====================global footer
+.layout-footer {
+	padding: 100px 0 62px;
+
+	.flex-block{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.left_block{
+		width: 400px;
+		display: inline-block;
+
+		.text{
+			color: #181818;
+			font: 300 18px/24px 'Geometria';
+			margin-bottom: 30px;
+		}
+
+		.border_button{
+			width: 250px;
+			height: 60px;
+			border-radius: 29px;
+			border: 2px solid #00c46e;
+			text-align: center;
+			font: 500 16px/55px 'Geometria';
+			color: #242424 !important;
+			background-color: transparent;
+
+			&:hover{
+				@extend .btn-ghost;
+			}
+		}
+	}
+
+	.center_block{
+		width: 235px;
+		display: inline-block;
+		color: #181818;
+		font: 400 13px/24px 'Geometria';
+	}
+
+	.si-phone {
+		display: inline-block;
+		text-align: right;
+
+		.phone-link{
+			width: 100%;
+			display: block;
+			color: #00b968;
+			font: 500 26px/26px 'Geometria';
+			position: relative;
+			margin-bottom: 15px;
+
+			&:hover{
+				text-decoration: underline;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				width: 18px;
+				height: 33px;
+				background: url("../svg/phone2.svg") no-repeat;
+				background-size: cover;
+				top: 0;
+				left: 25px;
+			}
+		}
+
+		.mail{
+			color: #242424;
+			font: 500 18px/18px 'Open Sans';
+			display: block;
+			margin-bottom: 34px;
+			width: 100%;
+			text-align: right;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		.app-block{
+			width: 305px;
+			display: flex;
+			justify-content: space-between;
+
+			a{
+				display: inline-block;
+				width: 145px;
+				height: 55px;
+			}
+		}
+	}
+}

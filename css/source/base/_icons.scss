@@ -1,0 +1,125 @@
+//====================icons
+.icon {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url('../images/sprite.png') no-repeat transparent;
+	position: relative;
+	vertical-align: middle;
+}
+
+.will-change {
+	background: none;
+
+	&::before,
+	&::after {
+		@include general-transition;
+		@include abs-center;
+		content: "";
+		overflow: hidden;
+		background: url('../images/sprite.png') no-repeat transparent;
+	}
+
+	&::before {
+		opacity: 1;
+	}
+
+	&::after {
+		opacity: 0;
+	}
+
+	&:hover,
+	&:active,
+	&.active {
+
+		&::before {
+		opacity: 0;
+		}
+
+		&::after {
+		opacity: 1;
+		}
+	}
+
+	&:hover,
+	&:active,
+	a:hover &,
+	a:active &,
+	.question:hover &,
+	.question:active &,
+	.question-item.active .question & {
+
+		&::before {
+		opacity: 0;
+		}
+
+		&::after {
+		opacity: 1;
+		}
+	}
+}
+
+//==================== SVG icons
+.svg-icon {
+	@include general-transition;
+	display: inline-block;
+	vertical-align: middle;
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+}
+
+.close {
+	width: 35px !important;
+	height: 35px !important;
+	fill: $font-color;
+	background: url("../svg/cancel.svg") no-repeat;
+	background-size: cover;
+
+	a:hover &,
+	a:active & {
+		fill: $accent-color;
+	}
+}
+
+.burger{
+	fill: #fff;
+}
+
+.phone{
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:20;
+	stroke-miterlimit:10;
+}
+
+.phone-1{
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:20;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+}
+
+.winner{fill:#A2AAAB;}
+.winner-1{fill:#C6D0D1;}
+.winner-2{fill:#C8D2D3;}
+.winner-3{fill:#828989;}
+.winner-4{fill:#C6CCCC;}
+.winner-5{fill:#DDE3E4;}
+.winner-6{fill:#CAD1D2;}
+.winner-7{fill:#D4DADA;}
+.winner-8{fill:#00B968;}
+.winner-9{fill:#00A25B;}
+
+.message{fill:#FFFFFF;}
+
+.left{fill:#FFFFFF;}
+
+.right{fill:#FFFFFF;}
+
+.flat{fill:#00C46E;}
+
+.work{fill:#00C46E;}
+
+.logout{fill:#00C46E;}

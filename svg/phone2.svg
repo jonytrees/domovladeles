@@ -1,0 +1,11 @@
+<svg version="1.1" class="phone_green" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 209 384.1" style="enable-background:new 0 0 209 384.1;" xml:space="preserve">
+<style type="text/css">
+	.phone_green{fill:none;stroke:#00B968;stroke-width:20;stroke-miterlimit:10;}
+	.phone_green{fill:none;stroke:#00B968;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="phone_green" d="M199,316l-25.3,58c0,3.3-42.2-51-42.2-51H22.7c-7,0-12.7-5.4-12.7-12V22"/>
+<g>
+	<path class="phone_green" d="M10,22c0-6.6,5.7-12,12.7-12h163.7c7,0,12.7,5.4,12.7,12v298"/>
+</g>
+</svg>

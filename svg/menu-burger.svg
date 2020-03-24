@@ -1,0 +1,13 @@
+<svg version="1.1" class="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 385 385" style="enable-background:new 0 0 385 385;" xml:space="preserve">
+<g>
+	<g>
+		<path class="burger" d="M331,108.3c0-6.6-3.9-12-8.7-12H62.6c-4.8,0-8.7,5.4-8.7,12c0,6.6,3.9,12,8.7,12h259.7
+			C327.1,120.3,331,114.9,331,108.3z"/>
+		<path class="burger" d="M54,192.5c0,6.6,3.9,12,8.7,12h259.7c4.8,0,8.7-5.4,8.7-12s-3.9-12-8.7-12H62.6C57.8,180.5,54,185.8,54,192.5
+			z"/>
+		<path class="burger" d="M54,276.7c0,6.6,3.9,12,8.7,12h173.1c4.8,0,8.7-5.4,8.7-12c0-6.6-3.9-12-8.7-12H62.6
+			C57.8,264.7,54,270.1,54,276.7z"/>
+	</g>
+</g>
+</svg>

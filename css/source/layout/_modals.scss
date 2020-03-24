@@ -1,0 +1,246 @@
+//==================== modal overlay
+html {
+
+	&.si-lock {
+		overflow: hidden !important;
+	}
+
+	&.si-lock2 {
+		height: 100% !important;
+		overflow: hidden !important;
+	}
+}
+
+.fancybox-margin {
+  	margin-right: 0 !important
+}
+
+.si-overlay {
+	@include abs-center-fixed;
+	display: none;
+	background: transparentize(#00b968, 0);
+	z-index: 203;
+}
+
+.si-overlay-2 {
+	@extend .si-overlay;
+	z-index: 205;
+}
+
+.si-modals-wrapper {
+	@include abs-center-fixed;
+	display: none;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 203;
+}
+
+.si-modals-wrapper-2 {
+	@extend .si-modals-wrapper;
+	z-index: 205;
+}
+
+//==================== modal close
+.si-close {
+	@extend .icon;
+	@extend .close !optional;
+	position: absolute !important;
+	top: -50px;
+	right: -50px;
+}
+
+//==================== modal - basic
+.si-modal {
+	@include general-transition;
+	@include transform(scale(0.7));
+	transition-duration: 0.5s;
+	display: none;
+	position: relative;
+	color: $font-color;
+	background: transparent;
+	padding: 70px 85px 60px;
+	width: 500px;
+	border: 13px solid #fff;
+	margin: 100px auto;
+
+	&.si-visible {
+		@include transform(scale(1));
+	}
+
+	.btn-holder {
+		margin-top: 0px;
+	}
+
+	input{
+		background-color: transparent !important;
+		border: none !important;
+		border-bottom: 1px solid #fff !important;
+		text-align: center !important;
+		color: #fff !important;
+		padding-bottom: 24px;
+		font: 300 15px/30px 'Open Sans';
+		margin-bottom: 16px;
+	}
+
+	.fio_button{
+		width: 302px;
+		height: 73px;
+		border-radius: 37px;
+		background-color: #7a4d9f;
+		text-align: center;
+		color: #fff;
+		font: 300 16px/73px 'Geometria';
+		margin-bottom: 30px;
+		margin-top: 9px;
+
+		&:hover{
+			background-color: #412b57;
+		}
+	}
+
+	.form-agree{
+		width: 220px;
+		display: block;
+		margin: 0 auto;
+
+		.form-agree-check{
+			color: #fff;
+			font: 300 13px/16px 'Open Sans';
+			margin-top: 0;
+
+			.link{
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+
+	}
+}
+
+.modal-form-title {
+  	margin-bottom: 40px;
+	text-align: center;
+	color: #fff;
+	font: 500 34px/34px 'Open Sans';
+}
+
+.modal-time {
+	width: 260px;
+	margin: 0 auto 35px;
+	text-align: center;
+	color: #fff;
+	font: 300 20px/30px 'Open Sans';
+}
+
+//==================== modal - text
+.modal-text-block {
+  	margin-top: 0px;
+}
+
+//==================== modal - success
+.si-success-modal {
+	@extend .si-modal;
+	width: 700px;
+	padding: 130px 100px;
+
+	strong {
+		display: block;
+	}
+
+	.line{
+		width: 58px;
+		height: 5px;
+		background-color: #fff;
+		display: block;
+		margin: 0 auto;
+	}
+
+	p{
+		width: 380px;
+		margin: 20px auto 0;
+		font: 300 24px/29px 'Geometria';
+		color: #fff;
+	}
+}
+
+.si-success-modal-title {
+  	@extend .modal-form-title !optional;
+	font: 500 50px/50px 'Open Sans';
+	margin-bottom: 10px;
+}
+
+.success-time {
+  	@extend .modal-time !optional;
+	width: 100%;
+	font: 300 37px/37px 'Open Sans';
+	margin-bottom: 25px;
+}
+
+
+
+//==================== message
+.si-page-message-overlay {
+	@include general-transition;
+	@include abs-center-fixed;
+	display: block;
+	visibility: hidden;
+	z-index: 299;
+	background: transparentize(#000, .2);
+	transition-duration: 0.5s;
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.si-page-message {
+	@include general-transition;
+	@include abs-center-fixed;
+	transition-duration: 0.5s;
+	width: 101%;
+	height: 0;
+	color: #fff;
+	background: $accent-color;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -5;
+	box-shadow: 0 0 10px #000;
+
+	&.show {
+		height: 200px;
+		opacity: 1;
+		visibility: visible;
+		z-index: 300;
+	}
+}
+
+.si-page-message-inner {
+	@include general-transition;
+	font-size: 30px;
+	line-height: 36px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	transition-duration: 0.5s;
+	opacity: 0;
+	position: relative;
+
+	&.show {
+		opacity: 1;
+	}
+
+	.centered {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.si-page-message-text {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
